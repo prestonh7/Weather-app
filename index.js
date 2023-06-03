@@ -40,8 +40,8 @@ function createWeatherCard(icon, date, avgTemp, minTemp, maxTemp) {
 
     image.src = `https:${icon}`;
     dateText.innerText = `${date}`;
-    avg.innerText = `${avgTemp}`
-    range.innerText = `${minTemp} - ${maxTemp}`;
+    avg.innerText = `${avgTemp}°F`
+    range.innerText = `${minTemp}°F - ${maxTemp}°F`;
 
     div.appendChild(dateText);
     div.appendChild(image);
