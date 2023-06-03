@@ -1,6 +1,25 @@
+:root {
+    --white: #F8F6F4;
+    --lightest-blue: #E3F4F4;
+    --medium-blue: #D2E9E9;
+    --darker-blue: #C4DFDF;
+}
+
+body {
+    background-color: var(--white);
+}
+
 #content {
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    gap: 1em;
     text-align: center;
+}
+
+#content div {
+    padding: .8em;
+    background-color: var(--lightest-blue);
+    border: 1px solid var(--darker-blue);
+    border-radius: .5em;
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
